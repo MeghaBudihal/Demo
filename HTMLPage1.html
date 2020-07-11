@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <title> Welcome Page</title>
+    <script type="text/javascript">
+        function display()
+        {
+            var r1 = document.getElementById("txtname").value;
+            var r2 = document.getElementById("txtpass").value;
+            var r3 = document.getElementById("txtadd").innerHTML;
+            var sex;
+            if (document.getElementById("rbfemale").checked== true)
+                sex = "female";
+            else
+                sex = "male";
+            var res1 = "details entered by now are:<br/>" + "Name:" + r1;
+            var res2 = "password:" + r2;
+            var res3 = "address:" + r3;
+            var res4 = "gender:" + r4;
+            var res5 = res1 + "<br/>" + res2 + "<br/" + res3 + "<br/" + res4;
+            document.getElementById("divers").innerHTML = res4;
+        }
+    </script>
+</head>
+<body>
+    
+        <input type="button" value="Add" onclick="display()"/>
+        <br/>
+        <h1>Enter your Details</h1>
+        <div style="font-size:x-large;border:solid black 3px">
+            <pre>
+        Enter your name               <input type="text" id="txtname"/>  </br>
+        Enter your Password           <input type="password" id="txtpass"/> <br />
+
+        Enter Address                 <textarea style="height:100px;width:100px"id="txtadd"></textarea></br>
+        Enter your sex                <input type="radio" name="g1"checked id="rbfemale" />Female       <input type="radio" name="g1" id="rbmale" />Male
+<br />
+
+         Select your degree :        
+            <input type="checkbox" />UG
+            <input type="checkbox" />PG
+            <input type="checkbox" />PhD
+            <input type="button" value="submit" />          <input type="button" value="cancel" />
+            
+            <div style="font-size:x-large;" id="diverse">DEtails entered are:></div>
+<br />
+       
+</pre>
+        
+    </body>
+
+</html>

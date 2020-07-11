@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        function Display() {
+            var n1= document.getElementById("txtn1").value;
+            var n2 = document.getElementById("txtn2").value;
+            var res = parseInt(n1) + parseInt(n2);
+            document.getElementById("txtres").value = res;
+        }
+    </script>
+</head>
+<body>
+    <div style="font-size:x-large;border:solid black 2px">
+
+        <pre>
+
+ Enter First Number <input type="text" id="txtn1" /> 
+Enter second Number <input type="text" id="txtn2" />
+   
+<input type="button" value="ADD" id="btnadd" onclick="Display()" />
+
+<textarea id="txtres"readonly>
+
+</textarea>
+
+</pre>
+    </div>
+    <p style="border: solid red 3px" id="txtPrint"></p>=
+    <h2 id="head2"></h2>
+
+</body>
+</html>
+
+
